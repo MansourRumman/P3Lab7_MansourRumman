@@ -13,6 +13,11 @@ string Articulo:: toString() {
 	retVal= nombre+","+tallaString()+","+to_string(precio)+","+to_string(cantidad)+","+to_string(descuento)+","+categoria->toStringC();
 	return retVal;
 }
+string Articulo:: toStringb(){
+	string retVal;
+	retVal= nombre+","+tallaString()+","+to_string(precio)+","+to_string(descuento)+","+categoria->toStringC();
+	return retVal;
+}
 string Articulo::tallaString(){
 	string parse="";
 	for(int i=0;i<talla.size();i++){

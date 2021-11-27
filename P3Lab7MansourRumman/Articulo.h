@@ -21,6 +21,7 @@ class Articulo {
 		Categoria* getCategoria();
 		void setCategoria(Categoria*);
 		string toString();
+		string toStringb();
 		string tallaString();
 		bool contieneTalla(char);
 	private:
@@ -30,7 +31,7 @@ class Articulo {
 		int cantidad;
 		int descuento;
 		Categoria* categoria;
-		
+
 };
 
 #endif

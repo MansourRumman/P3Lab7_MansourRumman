@@ -87,6 +87,7 @@ int main(int argc, char** argv) {
 				break;
 			}
 			case 3: {
+				Tienda::mostrarProductos();
 
 				break;
 			}

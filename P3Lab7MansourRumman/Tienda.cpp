@@ -16,12 +16,23 @@ void Tienda:: eliminarArti( int pos) {
 
 void Tienda::mostrarCate() {
 	for(int i=0; i<listaCate.size(); i++) {
-		cout<<listaCate[i];
+		cout<<listaCate[i]->toStringC()<<endl;
 	}
+	cout<<endl;
 }
 void Tienda::listarArti() {
 	for(int i=0; i<listaApli.size(); i++) {
 		cout<<listaApli[i]->toString()<<endl;
+	}
+}		
+void Tienda:: mostrarProductos(){
+	for(int i=0;i<listaCate.size();i++){
+		cout<<listaCate[i]->toStringC();
+		for(int j=0;j<listaApli.size();j++){
+			if(listaCate[i]==listaApli[j]->getCategoria()){
+				cout<<listaApli[j]->toString();
+			}
+		}
 	}
 }
 void Tienda::modApli(int pos, int copcion) {
@@ -87,20 +98,20 @@ void Tienda::buscaGen(int busC, char busT) {
 			for(int j=0; j<listaApli.size(); j++) {
 				if(buscarT) {
 					if(listaApli[j]->contieneTalla(busT)) {
-						cout<<listaApli[j]->toString()<<endl;
+						cout<<listaApli[j]->toStringb()<<endl;
 					}
 				} else {
-					cout<<listaApli[j]->toString()<<endl;
+					cout<<listaApli[j]->toStringb()<<endl;
 				}
 			}
 		} else {
 			for(int j=0; j<listaApli.size(); j++) {
 				if(buscarT) {
 					if(listaApli[j]->contieneTalla(busT)) {
-						cout<<listaApli[j]->toString()<<endl;
+						cout<<listaApli[j]->toStringb()<<endl;
 					}
 				} else {
-					cout<<listaApli[j]->toString()<<endl;
+					cout<<listaApli[j]->toStringb()<<endl;
 				}
 			}
 		}

@@ -15,6 +15,7 @@ class Tienda {
 		void modApli(int,int);
 		void eliminarArti(int);
 		void agregarCate(Categoria*);
+		void mostrarProductos();	
 		~Tienda();
 	private:
 		vector<Categoria*> listaCate;
