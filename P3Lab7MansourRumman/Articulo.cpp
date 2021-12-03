@@ -3,9 +3,9 @@
 Articulo::Articulo(string nombre, vector<char> talla,int precio,int cantidad,int descuento) {
 	this->nombre="";
 	this->talla=talla;
-	this->precio=0;
-	this->cantidad=0;
-	this->descuento=0;
+	this->precio=precio;
+	this->cantidad=cantidad;
+	this->descuento=descuento;
 	this->categoria=categoria;
 }
 string Articulo:: toString() {
