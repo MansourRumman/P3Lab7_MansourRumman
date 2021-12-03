@@ -1,7 +1,7 @@
 #include "Articulo.h"
 
 Articulo::Articulo(string nombre, vector<char> talla,int precio,int cantidad,int descuento) {
-	this->nombre="";
+	this->nombre=nombre;
 	this->talla=talla;
 	this->precio=precio;
 	this->cantidad=cantidad;
